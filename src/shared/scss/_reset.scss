@@ -1,0 +1,78 @@
+@use "./abstracts" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100vw;
+  height: 100svh;
+}
+
+body {
+  font-family: var(--font-poppins);
+  -webkit-font-smoothing: antialiased;
+  background-image: url(../assets/img/bg-main.jpg);
+  background-size: cover;
+
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+ul,
+li{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+button{
+  background-color: transparent;
+  border: none;
+}
+
+.react-joyride {
+  position: absolute;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  margin: 1rem;
+  border-radius: 1.6rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1.6rem;
+}
+
+::-webkit-scrollbar-track-piece {
+  -webkit-border-radius: 6px;
+}

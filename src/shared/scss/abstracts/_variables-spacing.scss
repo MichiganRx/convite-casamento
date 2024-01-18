@@ -1,0 +1,40 @@
+@use "./mixin" as *;
+
+$padding-mobile: 30px;
+
+@mixin centered-pages() {
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: $padding-mobile;
+}
+
+@mixin start-pages() {
+  display:flex;
+  padding: $padding-desktop;
+
+  @include desktop-l{
+    padding: $padding-desktop-l;
+  }
+}
+
+@mixin padding-top-bottom() {
+  padding: 60px 0;
+
+  @include desktop-l{
+    padding: clamp(30px, 3.5vw, 50px) 0;
+  }
+}
+
+@mixin padding-left-right() {
+  padding: 0 clamp(80px, 9vw, 160px);
+
+  @include desktop-l{
+    padding: 0 clamp(10px, 8.3vw, 80px);
+  }
+}
+
+
+

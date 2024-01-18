@@ -1,0 +1,32 @@
+@use "./mixin" as *;
+@use "./fonts" as *;
+
+$color-neutral-dark: #151515;
+$color-neutral-dark-opacity: rgba(0, 0, 0, 0.6);
+$color-primary: #842424;
+$color-neutral-light: rgba(255, 255, 255);
+$color-neutral-light-opacity-7: rgba(255, 255, 255, 0.7);
+
+@mixin font-title-main() {
+	font-size: 55px;
+  font-weight: 400;
+  font-family: 'ManyWeatz', sans-serif;
+  color: $color-primary;
+}
+
+@mixin font-title() {
+	font-size: 55px;
+  font-weight: 500;
+  color: $color-primary;
+  font-family: 'Monteryn', sans-serif;
+}
+
+@mixin font-p() {
+  font-family: 'Monteryn', sans-serif;
+  color: $color-primary;
+	font-size: 35px;
+  font-weight: 500;
+}
+
+
+
